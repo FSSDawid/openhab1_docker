@@ -32,7 +32,7 @@ RUN mkdir -p /opt/openhab/logs
 #
 # Install HBAdmin
 #
-RUN /bin/bash -c 'wget --quiet --no-cookies -O /opt/openhab/addons/org.openhab.io.habmin-1.7.0.jar https://github.com/cdjackson/HABmin/raw/master/addons/org.openhab.io.habmin-1.7.0-SNAPSHOT.jar' && \
+RUN /bin/bash -c 'wget --quiet --no-cookies -O /opt/openhab/addons-available/org.openhab.io.habmin-1.7.0.jar https://github.com/cdjackson/HABmin/raw/master/addons/org.openhab.io.habmin-1.7.0-SNAPSHOT.jar' && \
     /bin/bash -c 'wget --quiet --no-cookies -O /tmp/master.zip https://github.com/cdjackson/HABmin/archive/master.zip' && \
     unzip -q -d /tmp/habmin /tmp/master.zip && \
     mv /tmp/habmin/HABmin-master /opt/openhab/webapps/habmin
